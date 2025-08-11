@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e93477a57a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+            <nav>
+               <div  class="logo"><h1>GC</h1></div> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            </div>
+            <div class="header-text">
+                <p>Passionate About Full-Stack Development</p>
+                <h2>Hi,<br>  I'm <span><i class="fa-sharp fa-solid fa-g fa-flip fa-xl"></i>anga</span> <i class="fa-sharp fa-solid fa-c fa- fa-lg"></i>hhetri</h2><br><h3>Crafting Scalable Solutions with Clean Code and Creative Vision</h3>
+                <p id="para">Design | Develop | Deploy | Repeat</p>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------ABOUT----------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Ganga.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Student of Computer Engineering, honing my skills in full-stack web 
+                    development. My favorite part of programming is problem-solving—there’s nothing 
+                    quite like the thrill of finally cracking a tough bug (or realizing it was just a missing 
+                    semicolon). My core stack includes C++, JavaScript, React, Node.js, along with 
+                    experience in responsive Design and Databases. When I’m not coding, you’ll find me playing cricket, watching 
+                    movies, or diving into random tech rabbit holes. 
+                   ~ </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab "id="skills">
+                        <ul>
+                            <li><span>Programming Language:</span><br>Basics of C++, JavaScript, SQL</li>
+                            <li><span>Web Development:</span><br>HTML,CSS,JavaScript</li>
+                            <li><span>DataBases:</span><br>MongoDB,Firebase</li>
+                            <li><span>Frameworks and Libraries:</span><br>React.js,Nodejs,Expressjs,Tailwind CSS</li>
+                             <li><span>Tools:</span><br>Postman,Github,git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan/2025 - July/2025</span><br>Full-Stack Developer Training/Internship at PG-TECH Solution,Chandigarh</li>
+                            <li><span>May/2024-June/2024</span><br> Summer Internship at TatvaSoft Private Ltd., Ahemdabad,Gujarat</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE IN COMPUTER ENGINEERING (2021-Present):</span><br>A.D Patel Institute of Technology, New V.V Nagar, Anand, Gujarat</li>
+                            <li><span>HSC(2021):</span><br>Govt. Model High Sec. School Boys, Samba, Jammu & Kashmir </li>
+                            <li><span>SSC(2019):</span><br>Govt. High School Sail Kouri Ber, Udhampur, Jammu & Kashmir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+<!------------------------services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>MERN-Stack Development</h2>
+                <p>MERN Stack Development involves working on both the front-end (what users see) and back-end (the server and database) of a web application. A Mern Stack Developer is skilled in using a variety of technologies to create complete web solutions, handling everything from user interfaces to server-side logic.</p>
+                <a href="https://developer.mozilla.org/en-US/">Learn More..</a> 
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Responsive Web Design</h2>
+                <p >Responsive design ensures websites adapt to different screen sizes and devices, providing a seamless user experience on desktops, tablets, and smartphones. It uses flexible layouts and media queries to adjust the design automatically.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design">Learn More..</a> 
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DataBase Management</h2>
+                <p>A database is an organized collection of data that is stored and accessed electronically.It allows for efficient storage, retrieval, and management of data, making it easier to maintain and manipulate large amounts of information.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Database">Learn More..</a> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!------------------my work------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Chat-app</h3>
+                    <p>A MERN Stack Chat Application uses real-time messaging with Socket.io, enabling users to send and receive messages instantly. It features user authentication, chat rooms, and live updates, offering an interactive and seamless communication experience.</p>
+                    <a href="https://github.com/gourav-017/chat-app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt=""  >
+                <div class="layer">
+                    <h3>User-CRUD-App</h3>
+                    <p>Developed a user management system with Create, Read, Update, and Delete functionality for user data Used React.js for the frontend and Tailwind CSS for a responsive UI. Developed and integrated RESTful APIs Using Node.js, Express, and MongoDB, with Axios for smooth client-server communication. </p>
+                    <a href="https://github.com/gourav-017/User-CRUD-App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt=""  >
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>A weather app provides real-time weather updates, including temperature, humidity, wind speed, and forecasts for any location. It helps users plan their day by offering accurate and timely weather information.</p>
+                    <a href="https://github.com/gourav-017/Weather_app_project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/GangaChhetry" class="btn">See More - Go to Github</a>
+    </div>
+</div>
+<!------------------------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gangachhetry19@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8283937210</p>
+                <div class="social-icons">
+                    <a href=" https://wa.me/qr/NUKM67TNFL6RJ1 "><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/gourav_rajput017"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gourav-singh-a7bab2304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/gourav-017"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/GouravSingh.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>   
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Ganga Chhetri <i class="fa-solid fa-heart"></i> - All Rights Reserved</p>
+
+    </div>
+</div>
+
+
+<script src="app.js"
+>
+
+</script>
+<script>let sidemenu=document.getElementById("sidemenu");
+    function openMenu(){
+       sidemenu.style.right="0";
+    }
+    function closeMenu(){
+       sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-2tXNvJpDp--Ft6jzPvCIfC2PVHN8j4YA4fRKf-BIfftPefpHDq9gf3bz6mt7fv1t/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
